@@ -20,7 +20,7 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="/js/app.js?ver=1"></script>
     <script src="{{ asset('/js/modernizr.custom.js')}}"></script>
     <script src="{{ asset('/js/toucheffects.js')}}"></script>
     <script src="{{ asset('/js/jquery.easing.min.js')}}"></script>

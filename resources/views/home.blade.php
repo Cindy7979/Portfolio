@@ -23,7 +23,8 @@ I would like to be considered for the position “Web Developer, Junior”.</P>
                 <div class="profile_img thumbnail">
                     <img src="{{url(Config::get('app.configure.image'))}}/profile_img.jpg">
                 </div>
-                <button class="btn_download_cv">Download my CV</button>
+                <button class="btn_download_cv">Download CV</button>
+                <button class="btn_download_cv view_cv">View CV</button>
                 <ul>
                     @foreach ($menus as $menu) 
                         @if ($menu->type == 2)
@@ -35,6 +36,12 @@ I would like to be considered for the position “Web Developer, Junior”.</P>
         </div><!-- /sidebar -->
 
         <div id="content">
+            <section id="cv"  class="section_cv hidden_section">
+                <div class="content_bg">
+                    <pre class="content_description">{!!$resume!!}</pre>
+                </div>
+            </section>
+
             <section id="introduce">
                 <h3 class="sub_title">WHO I AM</h3>
                 @foreach ($introduce as $intro)

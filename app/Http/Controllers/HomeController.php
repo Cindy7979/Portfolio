@@ -45,6 +45,9 @@ class HomeController extends Controller
             ->get();
         $data['introduce'] = Content::where('type', 5)->get();
         $data['career'] = Career::all();
+        
+        $text = (new \App\Documentation)->get('resume.md');
+        $data['resume'] = markdown($text);
 
         return view('home', $data);
     }

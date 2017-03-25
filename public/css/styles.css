@@ -466,6 +466,17 @@ li {
     transform: rotate3d(0,1,0,-180deg);
 }
 
+.hidden_section {
+    display: none;
+}
+
+.hidden_section_active {
+    display: block;
+}
+
+#cd {
+}
+
 
 /*
 ** Portfolio **
